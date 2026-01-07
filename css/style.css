@@ -1,0 +1,283 @@
+:root{
+    --green: #22c55e;
+    --black: #000;
+    --dark: #111;
+    --text-light: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--text-light);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--green);
+    color: var(--black);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--dark);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+/* Cards de serviços */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #000;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Formulários */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--green);
+    background-color: #000;
+    color: var(--text-light);
+    resize: none;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34,197,94,0.5);
+}
+
+/* Downloads */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Links de contato rápido */
+#quick-contact a {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#quick-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px){
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px){
+    header { font-size: 90%; padding: 15px; }
+    form input, form textarea, form button { font-size: 14px; }
+}
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(34,197,94,0.4);
+    z-index: 1000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(34,197,94,0.6);
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+/* Serviços */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.service-card {
+    background: #0b0b0b;
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    padding: 12px;
+    color: #22c55e;
+    font-size: 1em;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.25);
+}
+/* Quem somos */
+#about {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #0b0b0b;
+    border-radius: 8px;
+}
+
+#about p {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-highlight {
+    color: #22c55e;
+    font-weight: 600;
+}
+/* Área de Arquivos */
+#files {
+    padding: 20px;
+    background: #0b0b0b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.files-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-item {
+    display: block;
+    padding: 12px;
+    background: #000;
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 6px;
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.file-item:hover {
+    background: rgba(34,197,94,0.1);
+    transform: translateX(4px);
+}
+.file-card {
+    background: #000;
+    border: 1px solid rgba(34,197,94,0.25);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.file-card a {
+    color: #22c55e;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.file-card p {
+    font-size: 0.9em;
+    color: #9ca3af;
+    line-height: 1.4;
+}
