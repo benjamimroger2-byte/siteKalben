@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalben Agritech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Kalben Agritech</h1>
+    <p>Serviços agrícolas e consultoria</p>
+</header>
+<section id="about">
+    <h2>Quem somos</h2>
+    <p>
+        A <strong>Kalben Agritech</strong> é uma iniciativa focada em soluções práticas
+        para o sector agrícola, atuando na prestação de serviços, consultoria
+        e levantamento de dados agrícolas.
+    </p>
+    <p>
+        Trabalhamos com uma abordagem técnica e orientada para resultados,
+        apoiando agricultores, produtores e projetos rurais na tomada de decisões
+        mais eficientes e sustentáveis.
+    </p>
+    <p class="about-highlight">
+        📍 Atendimento direto | 📞 WhatsApp | 🌱 Soluções agrícolas
+    </p>
+</section>
+<main>
+    <!-- Serviços com imagens e preços -->
+<section id="services">
+    <h2>Nossos Serviços</h2>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="imagens/prestacao.jpeg" alt="Prestação de Serviços">
+            <h3>Prestação de Serviços</h3>
+        </div>
+
+        <div class="service-card">
+            <img src="imagens/consultoria.jpg" alt="Consultoria Agrícola">
+            <h3>Consultoria Agrícola</h3>
+        </div>
+
+        <div class="service-card">
+            <img src="imagens/levantamento.jpg" alt="Levantamento de Dados Agrícolas">
+            <h3>Levantamento de Dados Agrícolas</h3>
+        </div>
+    </div>
+</section>
+    <!-- Pedido de Serviço -->
+    <section id="services">
+        <h2>Peça seu serviço</h2>
+        <form id="service-form">
+            <input type="text" id="client-name" placeholder="Seu nome" required>
+            <input type="tel" id="client-contact" placeholder="Seu número de celular" required>
+            <textarea id="service-request" placeholder="Descreva o serviço que deseja" required></textarea>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <!-- Downloads -->
+<section id="files">
+    <h2>Biblioteca de Arquivos</h2>
+
+    <div class="files-list">
+
+        <div class="file-card">
+            <a href="arquivos/pdfs/manual-plantio.pdf" download>
+                📄 Manual Básico de Plantio
+            </a>
+            <p>Guia introdutório sobre práticas agrícolas e preparação do solo.</p>
+        </div>
+
+        <div class="file-card">
+            <a href="arquivos/pdfs/guia-irrigacao.pdf" download>
+                📄 Guia de Irrigação
+            </a>
+            <p>Informações técnicas para uso eficiente da água na agricultura.</p>
+        </div>
+
+        <div class="file-card">
+            <a href="arquivos/imagens/mapa-solo.jpg" download>
+                🖼️ Mapa de Análise de Solo
+            </a>
+            <p>Exemplo de levantamento de dados agrícolas em campo.</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contact">
+        <h2>Fale comigo</h2>
+        <form id="contact-form">
+            <input type="text" id="contact-name" placeholder="Seu nome" required>
+            <input type="tel" id="contact-number" placeholder="Seu número de celular" required>
+            <textarea id="contact-message" placeholder="Escreva sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Contato rápido WhatsApp/Email -->
+    <section id="quick-contact">
+        <h2>Contato Rápido</h2>
+        <p>WhatsApp: <a href="https://wa.me/244974033986" target="_blank">+244 974 033 986</a></p>
+        <p>Email: <a href="mailto:benjamimroger2@gmail.com">benjamimroger2@gmail.com</a></p>
+    </section>
+</main>
+<a href="https://wa.me/244974033986"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Falar no WhatsApp">
+    <img src="imagens/whatsapp.png" alt="WhatsApp">
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>
